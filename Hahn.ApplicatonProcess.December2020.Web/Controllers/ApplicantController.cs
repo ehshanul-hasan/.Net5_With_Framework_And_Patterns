@@ -37,14 +37,13 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Controllers
         /// 
         ///     POST api/applicant
         ///     {        
-        ///         "id": 0,
-        ///         "name": "sdsd",
-        ///         "familyName": "dsdsd",
-        ///         "address": "string",
-        ///         "countryOfOrigin": "string",
-        ///         "eMailAdress": "string",
-        ///         "age": 0,
-        ///         "hired": false    
+        ///         "Name": "Ehshanul",
+        ///         "FamilyName": "Hasan",
+        ///         "Address": "Gulshan Badda Link Road",
+        ///         "CountryOfOrigin": "Bangladesh",
+        ///         "EmailAddress": "ehtousif@gmail.com",
+        ///         "Age": 20,
+        ///         "Hired": false    
         ///     }
         /// </remarks>
         /// <param name="request"></param>      
@@ -53,13 +52,12 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Controllers
         public async Task<IActionResult> Post([FromBody] Applicant request)
         {
             _logger.LogInformation("Execution started of applicant post action");
-            _logger.LogInformation(_localizer["Entity is not valid"]);
 
             var result = await _applicantService.CreateAsync(request);
 
             _logger.LogInformation("Execution ended of applicant post action");
 
-            return result.ToCreatedResult($"api/applicant/{result}");
+            return result.ToCreatedAtActionResult(nameof(Get), RouteData.Values["controller"].ToString(), new { id = result }, _localizer["Applicant created successfully"]);
         }
 
         [HttpGet("{id}")]

@@ -15,16 +15,16 @@ namespace Hahn.ApplicatonProcess.December2020.Domain.Validators
         public ApplicantValidator(ICountryService countryService)
         {
             _countryService = countryService;
-            RuleFor(model => model.Name).NotEmpty().NotNull().MinimumLength(5).WithMessage("Please specify a name");
-            RuleFor(model => model.FamilyName).NotEmpty().NotNull().MinimumLength(5).WithMessage("Please specify a name");
-            RuleFor(model => model.Address).NotEmpty().NotNull().MinimumLength(5).WithMessage("Please specify a name");
+            RuleFor(model => model.Name).NotEmpty().NotNull().MinimumLength(5).WithMessage("Name must be at least 5 charecters");
+            RuleFor(model => model.FamilyName).NotEmpty().NotNull().MinimumLength(5).WithMessage("Family must be at least 5 charecters");
+            RuleFor(model => model.Address).NotEmpty().NotNull().MinimumLength(10).WithMessage("Address must be with 10 Charecters");
             RuleFor(model => model.CountryOfOrigin).NotEmpty().NotNull().MustAsync(async (model, CountryOfOrigin, cancellationToken) =>
             {
                 return await _countryService.IsValidCountry(CountryOfOrigin, cancellationToken);
-            }).WithMessage("invalid country input");
-            RuleFor(model => model.EmailAddress).NotNull().NotEmpty().EmailAddress();
-            RuleFor(model => model.Age).NotNull().NotEmpty().InclusiveBetween(20, 60);
-            RuleFor(model => model.Hired).NotNull();
+            }).WithMessage("Country doesn't exist");
+            RuleFor(model => model.EmailAddress).NotNull().NotEmpty().EmailAddress().WithMessage("Email address is not valid");
+            RuleFor(model => model.Age).NotNull().NotEmpty().InclusiveBetween(20, 60).WithMessage("Age must be between 20 and 60");
+            RuleFor(model => model.Hired).NotNull().WithMessage("Hired field must contain bollean value");
         }
     }
 }

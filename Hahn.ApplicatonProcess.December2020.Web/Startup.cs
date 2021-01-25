@@ -52,8 +52,8 @@ namespace Hahn.ApplicatonProcess.December2020.Web
                         new CultureInfo("de-DE"),
                         new CultureInfo("en-US")
                     };
-                    options.DefaultRequestCulture = new RequestCulture(culture: "de-DE", uiCulture: "de-DE");
-                    options.SetDefaultCulture("de-DE");
+                    options.DefaultRequestCulture = new RequestCulture(culture: "en-US", uiCulture: "en-US");
+                    options.SetDefaultCulture(Configuration.GetSection("CurrentLanguage").Value);
                     options.SupportedCultures = supportedCultures;
                     options.SupportedUICultures = supportedCultures;
                     options.RequestCultureProviders = new[] { new RouteDataRequestCultureProvider { RouteDataStringKey = Configuration.GetSection("CurrentLanguage").Value , UIRouteDataStringKey = Configuration.GetSection("CurrentLanguage").Value } };
@@ -100,10 +100,10 @@ namespace Hahn.ApplicatonProcess.December2020.Web
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Hahn.ApplicatonProcess.December2020.Web v1"));
             }
 
-
+            app.UseRequestLocalization();
             app.UseHttpsRedirection();
 
-            app.UseRequestLocalization();
+            
 
             app.UseCors("default");
 

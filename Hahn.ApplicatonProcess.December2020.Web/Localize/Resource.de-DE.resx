@@ -117,7 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Address must be with 10 Charecters" xml:space="preserve">
+    <value>Address must be with 10 Charecters - de</value>
+  </data>
+  <data name="Age must be between 20 and 60" xml:space="preserve">
+    <value>Age must be between 20 and 60 - de</value>
+  </data>
+  <data name="Applicant created successfully" xml:space="preserve">
+    <value>Applicant created successfully - de</value>
+  </data>
+  <data name="Email address is not valid" xml:space="preserve">
+    <value>Email address is not valid - de</value>
+  </data>
   <data name="Entity is not valid" xml:space="preserve">
-    <value>Germany</value>
+    <value>Entity is not valid - de</value>
+  </data>
+  <data name="Family must be at least 5 charecters" xml:space="preserve">
+    <value>Family must be at least 5 charecters - de</value>
+  </data>
+  <data name="Hired field must contain bollean value" xml:space="preserve">
+    <value>Hired field must contain bollean value - de</value>
+  </data>
+  <data name="Invalid Input" xml:space="preserve">
+    <value>Invalid Input - - de</value>
+  </data>
+  <data name="Name must be at least 5 charecters" xml:space="preserve">
+    <value>Name must be at least 5 charecters - de</value>
+  </data>
+  <data name="Something went wrong" xml:space="preserve">
+    <value>Something went wrong - de</value>
   </data>
 </root>

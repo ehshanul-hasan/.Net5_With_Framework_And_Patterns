@@ -19,9 +19,14 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Extensions
             return new OkObjectResult(model.ToResult(status, message));
         }
 
-        public static ActionResult ToCreatedResult<T>(this T value, string location = "", int status = 201, string message = default)
+        public static ActionResult ToCreatedResult<T>(this T value, string location = "", string message = default, int status = 201)
         {
             return new CreatedResult(location, value.ToResult(status, message));
+        }
+
+        public static ActionResult ToCreatedAtActionResult<T>(this T value, string actionName, string controllerName, object routeValues, string message = default, int status = 201)
+        {
+            return new CreatedAtActionResult( actionName, controllerName,  routeValues, value.ToResult(status, message));
         }
     }
 }

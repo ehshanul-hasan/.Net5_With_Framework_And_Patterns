@@ -30,7 +30,7 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Filters
             result = new ObjectResult(new
             {
                 Status = 500,
-                Message = _localizer["Something went wrong."],
+                Message = _localizer["Something went wrong"].Value,
                 Errors = CollectErrors(context)
             })
             {
@@ -46,9 +46,9 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Filters
             Exception ex = context.Exception;
             while (ex != null)
             {
+                _logger.LogError(ex.ToString());
                 errors.Add(ex.Message);
                 ex = ex.InnerException;
-                _logger.LogError(ex.ToString());
             }
             return errors;
         }
