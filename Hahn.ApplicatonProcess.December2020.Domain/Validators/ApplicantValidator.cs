@@ -24,7 +24,6 @@ namespace Hahn.ApplicatonProcess.December2020.Domain.Validators
             }).WithMessage("Country doesn't exist");
             RuleFor(model => model.EmailAddress).NotNull().NotEmpty().EmailAddress().WithMessage("Email address is not valid");
             RuleFor(model => model.Age).NotNull().NotEmpty().InclusiveBetween(20, 60).WithMessage("Age must be between 20 and 60");
-            RuleFor(model => model.Hired).NotNull().WithMessage("Hired field must contain bollean value");
         }
     }
 }

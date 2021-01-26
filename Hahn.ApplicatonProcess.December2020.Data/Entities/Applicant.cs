@@ -13,7 +13,7 @@ namespace Hahn.ApplicatonProcess.December2020.Data.Entities
         public string CountryOfOrigin { get; set; }
         public string EmailAddress { get; set; }
         public int Age { get; set; }
-        public bool Hired { get; set; } = false;
+        public bool? Hired { get; set; } = false;
 
     }
 

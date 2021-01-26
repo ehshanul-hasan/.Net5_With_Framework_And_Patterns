@@ -14,7 +14,7 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Extensions
             return new Result(model, status, message);
         }
 
-        public static ActionResult ToOkResult<T>(this T model, int status = 200, string message = default)
+        public static ActionResult ToOkResult<T>(this T model, string message = default, int status = 200)
         {
             return new OkObjectResult(model.ToResult(status, message));
         }

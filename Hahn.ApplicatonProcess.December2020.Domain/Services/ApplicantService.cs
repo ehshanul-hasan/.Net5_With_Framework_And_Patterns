@@ -1,6 +1,7 @@
 ﻿using Hahn.ApplicatonProcess.December2020.Data.Entities;
 using Hahn.ApplicatonProcess.December2020.Data.Repositories;
 using Hahn.ApplicatonProcess.December2020.Data.UnitOfWork;
+using Hahn.ApplicatonProcess.December2020.Domain.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace Hahn.ApplicatonProcess.December2020.Domain.Services
         }
         public async Task<int> CreateAsync(Applicant applicant, CancellationToken cancellationToken = default)
         {
+            applicant.Hired = applicant.Hired ?? false;
             _applicantRepository.Create(applicant);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
             return applicant.ID;
@@ -31,6 +33,10 @@ namespace Hahn.ApplicatonProcess.December2020.Domain.Services
         public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken = default)
         {
             Applicant applicant = await _applicantRepository.Get(id);
+
+            if (applicant == null)
+                throw new NotFoundException("Applicant Not Found");
+
             _applicantRepository.Delete(applicant);
             var result = await _unitOfWork.SaveChangesAsync(cancellationToken);
             return result > 0;
@@ -40,13 +46,16 @@ namespace Hahn.ApplicatonProcess.December2020.Domain.Services
         {
             Applicant applicant = await _applicantRepository.Get(request.ID);
 
+            if (applicant == null)
+                throw new NotFoundException("Applicant Not Found");
+
             applicant.Name = request.Name;
             applicant.FamilyName = request.FamilyName;
             applicant.EmailAddress = request.EmailAddress;
             applicant.Address = request.Address;
             applicant.CountryOfOrigin = request.CountryOfOrigin;
             applicant.Age = request.Age;
-            applicant.Hired = request.Hired;
+            applicant.Hired = request.Hired ?? false;
 
             _applicantRepository.Update(applicant);
 

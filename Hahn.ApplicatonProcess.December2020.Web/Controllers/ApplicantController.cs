@@ -106,7 +106,7 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Controllers
             request.ID = id;
             var result = await _applicantService.UpdateAsync(request);
             _logger.LogInformation("Execution started of applicant put action");
-            return result.ToOkResult();
+            return result.ToOkResult(_localizer["Applicant updated successfully"]);
         }
 
 

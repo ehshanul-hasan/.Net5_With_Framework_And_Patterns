@@ -26,3 +26,203 @@
 2021-01-26 01:13:14.666 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'a' is an invalid start of a value. Path: $.Age | LineNumber: 6 | BytePositionInLine: 11.
 2021-01-26 01:13:24.052 +06:00 [INF] Execution started of applicant post action
 2021-01-26 01:13:24.053 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 01:16:30.209 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:16:30.215 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:16:31.639 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:16:31.641 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:16:41.973 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:16:41.976 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:17:21.324 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 01:17:21.347 +06:00 [INF] Execution ended of applicant delete action
+2021-01-26 01:17:23.082 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 01:17:23.807 +06:00 [ERR] System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at Hahn.ApplicatonProcess.December2020.Data.Repositories.RepositoryBase`1.Delete(T entity) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Data\Repositories\RepositoryBase.cs:line 45
+   at Hahn.ApplicatonProcess.December2020.Domain.Services.ApplicantService.DeleteAsync(Int32 id, CancellationToken cancellationToken) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Domain\Services\ApplicantService.cs:line 34
+   at Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Delete(Int32 id) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Web\Controllers\ApplicantController.cs:line 76
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2021-01-26 01:18:05.781 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 01:18:05.986 +06:00 [ERR] System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at Hahn.ApplicatonProcess.December2020.Data.Repositories.RepositoryBase`1.Delete(T entity) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Data\Repositories\RepositoryBase.cs:line 45
+   at Hahn.ApplicatonProcess.December2020.Domain.Services.ApplicantService.DeleteAsync(Int32 id, CancellationToken cancellationToken) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Domain\Services\ApplicantService.cs:line 34
+   at Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Delete(Int32 id) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Web\Controllers\ApplicantController.cs:line 76
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2021-01-26 01:18:29.363 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:18:29.365 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:18:52.170 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 01:18:52.173 +06:00 [INF] Execution ended of applicant delete action
+2021-01-26 01:19:18.398 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 01:19:18.587 +06:00 [ERR] System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at Hahn.ApplicatonProcess.December2020.Data.Repositories.RepositoryBase`1.Delete(T entity) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Data\Repositories\RepositoryBase.cs:line 45
+   at Hahn.ApplicatonProcess.December2020.Domain.Services.ApplicantService.DeleteAsync(Int32 id, CancellationToken cancellationToken) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Domain\Services\ApplicantService.cs:line 34
+   at Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Delete(Int32 id) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Web\Controllers\ApplicantController.cs:line 76
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2021-01-26 01:20:09.166 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:20:25.374 +06:00 [ERR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at Hahn.ApplicatonProcess.December2020.Domain.Services.ApplicantService.UpdateAsync(Applicant request, CancellationToken cancellationToken) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Domain\Services\ApplicantService.cs:line 43
+   at Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Put(Int32 id, Applicant request) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Web\Controllers\ApplicantController.cs:line 107
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2021-01-26 01:20:53.470 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:20:53.479 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:21:35.091 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:21:35.093 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:21:44.818 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:21:44.821 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:21:51.538 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:21:51.540 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:22:07.207 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:22:07.209 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:22:22.463 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:22:22.465 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:23:32.329 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:23:32.337 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:23:45.203 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:23:45.205 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:23:58.770 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:23:58.773 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:24:04.579 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:24:04.581 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:24:07.785 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:24:07.787 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:24:26.366 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:24:26.368 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:24:32.413 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:24:32.415 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:24:45.538 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.December2020.Web) - 'Family Name' must not be empty.
+2021-01-26 01:24:56.015 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:24:56.016 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:25:09.469 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.December2020.Web) - Family must be at least 5 charecters - en
+2021-01-26 01:25:35.945 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:25:35.947 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:25:54.563 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:25:54.566 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:26:10.142 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:26:10.144 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:26:25.694 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:26:25.697 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:26:41.863 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:26:41.864 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:26:46.437 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:26:46.438 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:27:09.174 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:27:09.176 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:27:13.573 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:27:13.575 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:27:24.999 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.December2020.Web) - 'Name' must not be empty.
+2021-01-26 01:27:34.285 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:27:34.287 +06:00 [INF] Execution started of applicant put action
+2021-01-26 01:27:42.314 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.December2020.Web) - 'Address' must not be empty.,Address must be with 10 Charecters - en
+2021-01-26 01:30:34.670 +06:00 [INF] Execution started of applicant post action
+2021-01-26 01:30:34.671 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 01:30:54.085 +06:00 [INF] Execution started of applicant get action
+2021-01-26 01:30:54.087 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 01:34:56.756 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 01:35:43.734 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 01:36:50.335 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 01:37:07.061 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 01:37:42.895 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 01:38:01.701 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 01:38:09.004 +06:00 [INF] Execution started of applicant post action
+2021-01-26 01:38:09.005 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 01:38:54.028 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 01:39:00.487 +06:00 [INF] Execution started of applicant post action
+2021-01-26 01:39:00.488 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 01:40:25.545 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - The JSON value could not be converted to System.Int32. Path: $.age | LineNumber: 0 | BytePositionInLine: 382.
+2021-01-26 01:40:33.658 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - The JSON value could not be converted to System.Int32. Path: $.age | LineNumber: 0 | BytePositionInLine: 382.
+2021-01-26 01:40:48.625 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - The JSON value could not be converted to System.Int32. Path: $.age | LineNumber: 0 | BytePositionInLine: 382.
+2021-01-26 01:41:32.593 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - The JSON value could not be converted to System.Int32. Path: $.age | LineNumber: 0 | BytePositionInLine: 263.
+2021-01-26 01:41:40.497 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - The JSON value could not be converted to System.Int32. Path: $.age | LineNumber: 0 | BytePositionInLine: 242.
+2021-01-26 01:42:13.385 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - The JSON value could not be converted to System.Int32. Path: $.age | LineNumber: 0 | BytePositionInLine: 257.
+2021-01-26 01:43:15.985 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - The JSON value could not be converted to System.Int32. Path: $.age | LineNumber: 0 | BytePositionInLine: 206.
+2021-01-26 01:43:29.310 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 01:43:57.555 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - The JSON value could not be converted to System.Int32. Path: $.age | LineNumber: 0 | BytePositionInLine: 211.
+2021-01-26 01:44:33.556 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - The JSON value could not be converted to System.Int32. Path: $.age | LineNumber: 0 | BytePositionInLine: 211.
+2021-01-26 01:45:16.726 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 01:47:35.440 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Age' must not be empty.,Age must be between 20 and 60 - en,'Name' must not be empty.,Name must be at least 5 charecters - en,'Address' must not be empty.,Address must be with 10 Charecters - en,'Family Name' must not be empty.,Family must be at least 5 charecters - en,'Email Address' must not be empty.,Email address is not valid - en,'Country Of Origin' must not be empty.,Country doesn't exist
+2021-01-26 01:47:42.080 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Age' must not be empty.,Age must be between 20 and 60 - en
+2021-01-26 02:10:31.189 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 02:12:08.472 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Age' must not be empty.,Age must be between 20 and 60 - en,'Name' must not be empty.,Name must be at least 5 charecters - en,'Address' must not be empty.,Address must be with 10 Charecters - en,'Family Name' must not be empty.,Family must be at least 5 charecters - en,'Email Address' must not be empty.,Email address is not valid - en,'Country Of Origin' must not be empty.,Country doesn't exist
+2021-01-26 02:12:15.053 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Age' must not be empty.,Age must be between 20 and 60 - en,'Name' must not be empty.,Name must be at least 5 charecters - en,'Address' must not be empty.,Address must be with 10 Charecters - en,'Family Name' must not be empty.,Family must be at least 5 charecters - en,'Email Address' must not be empty.,Email address is not valid - en,'Country Of Origin' must not be empty.,Country doesn't exist
+2021-01-26 02:12:28.460 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Name' must not be empty.,Name must be at least 5 charecters - en,'Address' must not be empty.,Address must be with 10 Charecters - en,'Family Name' must not be empty.,Family must be at least 5 charecters - en,'Email Address' must not be empty.,Email address is not valid - en,'Country Of Origin' must not be empty.,Country doesn't exist
+2021-01-26 02:12:39.126 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Age' must not be empty.,Age must be between 20 and 60 - en,'Name' must not be empty.,Name must be at least 5 charecters - en,Address must be with 10 Charecters - en,'Family Name' must not be empty.,Family must be at least 5 charecters - en,'Email Address' must not be empty.,Email address is not valid - en,Country doesn't exist
+2021-01-26 02:33:46.080 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Age must be between 20 and 60 - en,'Name' must not be empty.,Name must be at least 5 charecters - en,'Address' must not be empty.,Address must be with 10 Charecters - en,'Family Name' must not be empty.,Family must be at least 5 charecters - en,'Email Address' must not be empty.,Email address is not valid - en,'Country Of Origin' must not be empty.,Country doesn't exist
+2021-01-26 16:18:48.076 +06:00 [INF] Execution started of applicant post action
+2021-01-26 16:18:48.497 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 16:19:20.319 +06:00 [INF] Execution started of applicant post action
+2021-01-26 16:19:20.321 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 16:24:08.681 +06:00 [INF] Execution started of applicant post action
+2021-01-26 16:24:08.682 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 16:24:21.687 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 16:24:36.090 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 16:34:03.911 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 16:39:19.058 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 16:39:41.068 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 16:41:01.607 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 16:41:33.171 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 16:41:53.944 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 16:46:40.932 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Country doesn't exist
+2021-01-26 17:33:34.181 +06:00 [INF] Execution started of applicant post action
+2021-01-26 17:33:34.653 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 17:34:34.042 +06:00 [INF] Execution started of applicant post action
+2021-01-26 17:34:34.449 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 17:52:35.100 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 17:52:36.594 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Domain.Exceptions.NotFoundException: Applicant Not Found
+   at Hahn.ApplicatonProcess.December2020.Domain.Services.ApplicantService.DeleteAsync(Int32 id, CancellationToken cancellationToken) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Domain\Services\ApplicantService.cs:line 38
+   at Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Delete(Int32 id) in C:\Users\ehtou\source\repos\Hahn.ApplicatonProcess.December2020\Hahn.ApplicatonProcess.December2020.Web\Controllers\ApplicantController.cs:line 76
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2021-01-26 17:54:23.242 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 17:58:07.324 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 18:16:11.548 +06:00 [INF] Execution started of applicant post action
+2021-01-26 18:16:12.089 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 18:16:20.111 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Name must be at least 5 charecters - de
+2021-01-26 18:16:35.391 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Name must be at least 5 charecters - de
+2021-01-26 18:16:51.091 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - Name must be at least 5 charecters - de,Hired field must contain bollean value - de
+2021-01-26 18:18:03.035 +06:00 [INF] Execution started of applicant post action
+2021-01-26 18:18:03.437 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 18:18:14.931 +06:00 [INF] Execution started of applicant post action
+2021-01-26 18:18:14.933 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 18:18:40.417 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - '}' is an invalid start of a value. Path: $.Hired | LineNumber: 8 | BytePositionInLine: 0.
+2021-01-26 18:18:54.972 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - '}' is invalid after a property name. Expected a ':'. Path: $ | LineNumber: 8 | BytePositionInLine: 0.
+2021-01-26 18:20:06.295 +06:00 [INF] Execution started of applicant post action
+2021-01-26 18:20:06.702 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 18:20:19.499 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Family Name' darf nicht leer sein.,Family must be at least 5 charecters - de

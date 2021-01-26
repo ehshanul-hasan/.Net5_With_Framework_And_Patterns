@@ -1,4 +1,5 @@
 ﻿using Hahn.ApplicatonProcess.December2020.Data.UnitOfWork;
+using Hahn.ApplicatonProcess.December2020.Domain.Exceptions;
 using Hahn.ApplicatonProcess.December2020.Web.Localize;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
@@ -26,17 +27,34 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Filters
         public Task OnExceptionAsync(ExceptionContext context)
         {
             _unitOfWork.RollBackAsync();
-            ObjectResult result;
-            result = new ObjectResult(new
+
+            if (context.Exception is BusinessExceptionBase)
             {
-                Status = 500,
-                Message = _localizer["Something went wrong"].Value,
-                Errors = CollectErrors(context)
-            })
+                var exception = (BusinessExceptionBase)context.Exception;
+                context.HttpContext.Response.StatusCode = exception.Status;
+                context.Result = new ObjectResult(new
+                {
+                    Status = exception.Status,
+                    Message = exception.Message
+                })
+                {
+                    StatusCode = exception.Status
+                };
+            }
+            else
             {
-                StatusCode = 500
-            };
-            context.Result = result;
+                ObjectResult result;
+                result = new ObjectResult(new
+                {
+                    Status = 500,
+                    Message = _localizer["Something went wrong"].Value,
+                    Errors = CollectErrors(context)
+                })
+                {
+                    StatusCode = 500
+                };
+                context.Result = result;
+            }
             return Task.CompletedTask;
         }
 

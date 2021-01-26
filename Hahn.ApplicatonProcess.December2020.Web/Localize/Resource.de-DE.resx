@@ -126,6 +126,9 @@
   <data name="Applicant created successfully" xml:space="preserve">
     <value>Applicant created successfully - de</value>
   </data>
+  <data name="Applicant updated successfully" xml:space="preserve">
+    <value>Applicant updated successfully - de</value>
+  </data>
   <data name="Email address is not valid" xml:space="preserve">
     <value>Email address is not valid - de</value>
   </data>
