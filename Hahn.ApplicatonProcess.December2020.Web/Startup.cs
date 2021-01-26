@@ -1,30 +1,21 @@
 using FluentValidation.AspNetCore;
-using Hahn.ApplicatonProcess.December2020.Data.Context;
-using Hahn.ApplicatonProcess.December2020.Data.Entities;
 using Hahn.ApplicatonProcess.December2020.Domain.Services;
 using Hahn.ApplicatonProcess.December2020.Domain.Validators;
 using Hahn.ApplicatonProcess.December2020.Web.Extensions;
 using Hahn.ApplicatonProcess.December2020.Web.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Localization.Routing;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace Hahn.ApplicatonProcess.December2020.Web
 {

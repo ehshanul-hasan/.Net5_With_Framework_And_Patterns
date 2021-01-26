@@ -35,7 +35,7 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Filters
                 context.Result = new ObjectResult(new
                 {
                     Status = exception.Status,
-                    Message = exception.Message
+                    Message = _localizer[exception.Message].Value
                 })
                 {
                     StatusCode = exception.Status

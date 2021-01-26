@@ -226,3 +226,76 @@
 2021-01-26 18:20:06.295 +06:00 [INF] Execution started of applicant post action
 2021-01-26 18:20:06.702 +06:00 [INF] Execution ended of applicant post action
 2021-01-26 18:20:19.499 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Family Name' darf nicht leer sein.,Family must be at least 5 charecters - de
+2021-01-26 21:34:15.991 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Put (Hahn.ApplicatonProcess.December2020.Web) - 'Name' darf nicht leer sein.,Die Länge von 'Name' muss größer oder gleich 5 sein. Sie haben 0 Zeichen eingegeben.
+2021-01-26 22:04:35.852 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Age' darf nicht leer sein.,'Age' muss zwischen 20 and 60 sein. Es wurde 0 eingegeben.,Die Länge von 'Address' muss größer oder gleich 10 sein. Sie haben 6 Zeichen eingegeben.,'Email Address' ist keine gültige E-Mail-Adresse.,Country doesn't exist
+2021-01-26 22:33:43.031 +06:00 [INF] Execution started of applicant post action
+2021-01-26 22:33:43.471 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 22:34:11.469 +06:00 [INF] Execution started of applicant post action
+2021-01-26 22:34:11.472 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 22:34:50.321 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - '}' is an invalid start of a value. Path: $.Hired | LineNumber: 8 | BytePositionInLine: 0.
+2021-01-26 22:35:22.638 +06:00 [INF] Execution started of applicant post action
+2021-01-26 22:35:22.641 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 22:36:05.726 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Age' muss zwischen 20 and 60 sein. Es wurde 88 eingegeben.,Die Länge von 'Name' muss größer oder gleich 5 sein. Sie haben 4 Zeichen eingegeben.,Die Länge von 'Address' muss größer oder gleich 10 sein. Sie haben 3 Zeichen eingegeben.,Die Länge von 'Family Name' muss größer oder gleich 5 sein. Sie haben 4 Zeichen eingegeben.,Der Wert von 'Country Of Origin' entspricht nicht der festgelegten Bedingung.
+2021-01-26 22:39:25.007 +06:00 [INF] Execution started of applicant post action
+2021-01-26 22:39:25.008 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 22:40:10.552 +06:00 [INF] Execution started of applicant post action
+2021-01-26 22:40:10.553 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 22:43:58.351 +06:00 [INF] Execution started of applicant get action
+2021-01-26 22:43:58.458 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 22:44:02.139 +06:00 [INF] Execution started of applicant get action
+2021-01-26 22:44:02.142 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 22:45:24.149 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 22:45:24.178 +06:00 [INF] Execution ended of applicant delete action
+2021-01-26 22:45:25.890 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 22:45:58.997 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 22:46:05.158 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 22:46:05.161 +06:00 [INF] Execution ended of applicant delete action
+2021-01-26 22:46:08.463 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 22:47:05.394 +06:00 [INF] Execution started of applicant put action
+2021-01-26 22:47:05.401 +06:00 [INF] Execution started of applicant put action
+2021-01-26 22:48:16.149 +06:00 [INF] Execution started of applicant put action
+2021-01-26 22:48:16.152 +06:00 [INF] Execution started of applicant put action
+2021-01-26 22:48:28.224 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 22:50:36.336 +06:00 [INF] Execution started of applicant get action
+2021-01-26 22:50:36.338 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 23:12:38.817 +06:00 [INF] Execution started of applicant post action
+2021-01-26 23:12:38.818 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 23:14:41.339 +06:00 [INF] Execution started of applicant post action
+2021-01-26 23:14:41.340 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 23:16:04.571 +06:00 [INF] Execution started of applicant post action
+2021-01-26 23:16:04.572 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 23:16:14.885 +06:00 [INF] Execution started of applicant post action
+2021-01-26 23:16:14.885 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 23:16:28.817 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' ist keine gültige E-Mail-Adresse.
+2021-01-26 23:16:37.602 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - ',' is an invalid start of a value. Path: $.Age | LineNumber: 6 | BytePositionInLine: 11.
+2021-01-26 23:17:10.099 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - ',' is an invalid start of a value. Path: $.Age | LineNumber: 6 | BytePositionInLine: 11.
+2021-01-26 23:17:13.182 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - ',' is an invalid start of a value. Path: $.Age | LineNumber: 6 | BytePositionInLine: 11.
+2021-01-26 23:17:14.798 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - ',' is an invalid start of a value. Path: $.Age | LineNumber: 6 | BytePositionInLine: 11.
+2021-01-26 23:17:43.350 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - ',' is an invalid start of a value. Path: $.Age | LineNumber: 6 | BytePositionInLine: 11.
+2021-01-26 23:17:51.580 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - ',' is an invalid start of a value. Path: $.Age | LineNumber: 6 | BytePositionInLine: 11.
+2021-01-26 23:18:12.167 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'd' is an invalid start of a value. Path: $.Age | LineNumber: 6 | BytePositionInLine: 11.
+2021-01-26 23:18:28.612 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Age' muss zwischen 20 and 60 sein. Es wurde 5 eingegeben.,Die Länge von 'Name' muss größer oder gleich 5 sein. Sie haben 3 Zeichen eingegeben.,Die Länge von 'Address' muss größer oder gleich 10 sein. Sie haben 3 Zeichen eingegeben.,Die Länge von 'Family Name' muss größer oder gleich 5 sein. Sie haben 4 Zeichen eingegeben.,'Email Address' ist keine gültige E-Mail-Adresse.,Der Wert von 'Country Of Origin' entspricht nicht der festgelegten Bedingung.
+2021-01-26 23:20:39.086 +06:00 [INF] Execution started of applicant get action
+2021-01-26 23:20:39.090 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 23:20:58.113 +06:00 [INF] Execution started of applicant get action
+2021-01-26 23:20:58.115 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 23:21:26.516 +06:00 [INF] Execution started of applicant get action
+2021-01-26 23:21:26.518 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 23:21:31.674 +06:00 [INF] Execution started of applicant get action
+2021-01-26 23:21:31.676 +06:00 [INF] Execution ended of applicant get action
+2021-01-26 23:21:49.057 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 23:21:49.060 +06:00 [INF] Execution ended of applicant delete action
+2021-01-26 23:22:01.959 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 23:23:01.477 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 23:23:06.669 +06:00 [INF] Execution started of applicant delete action
+2021-01-26 23:23:06.674 +06:00 [INF] Execution ended of applicant delete action
+2021-01-26 23:23:52.727 +06:00 [INF] Execution started of applicant put action
+2021-01-26 23:24:23.853 +06:00 [INF] Execution started of applicant put action
+2021-01-26 23:24:23.855 +06:00 [INF] Execution started of applicant put action
+2021-01-26 23:37:10.119 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' ist keine gültige E-Mail-Adresse.,'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:38:10.738 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' ist keine gültige E-Mail-Adresse.,'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:38:30.652 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' ist keine gültige E-Mail-Adresse.,'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:38:42.203 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:39:04.195 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:39:22.310 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:39:25.655 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' weist ein ungültiges Format auf.

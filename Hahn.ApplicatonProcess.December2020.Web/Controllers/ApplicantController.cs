@@ -43,7 +43,7 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Controllers
         ///         "CountryOfOrigin": "Bangladesh",
         ///         "EmailAddress": "ehtousif@gmail.com",
         ///         "Age": 20,
-        ///         "Hired": false    
+        ///         "Hired": false   
         ///     }
         /// </remarks>
         /// <param name="request"></param>      
@@ -86,14 +86,13 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Controllers
         /// 
         ///     PUT api/applicant
         ///     {        
-        ///         "id": 0,
-        ///         "name": "sdsd",
-        ///         "familyName": "dsdsd",
-        ///         "address": "string",
-        ///         "countryOfOrigin": "string",
-        ///         "eMailAdress": "string",
-        ///         "age": 0,
-        ///         "hired": true    
+        ///         "Name": "Ehshanul",
+        ///         "FamilyName": "Hasan",
+        ///         "Address": "Gulshan Badda Link Road",
+        ///         "CountryOfOrigin": "Bangladesh",
+        ///         "EmailAddress": "ehtousif@gmail.com",
+        ///         "Age": 20,
+        ///         "Hired": true   
         ///     }
         /// </remarks>
         /// <param name="id"></param>  

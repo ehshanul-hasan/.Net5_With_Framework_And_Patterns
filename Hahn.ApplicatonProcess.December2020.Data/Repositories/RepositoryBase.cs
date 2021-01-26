@@ -19,14 +19,6 @@ namespace Hahn.ApplicatonProcess.December2020.Data.Repositories
             _repositoryContext = repositoryContext;
         }
 
-        public IQueryable<T> Where(Expression<Func<T, bool>> predicate, bool readOnly = false)
-        {
-            var set = _repositoryContext.Set<T>();
-            if (readOnly)
-                set.AsNoTracking();
-
-            return set.Where(predicate);
-        }
         public async Task<T> Get(int id, CancellationToken cancellationToken = default)
         {
             return await _repositoryContext.Set<T>().FindAsync(id);
@@ -43,6 +35,15 @@ namespace Hahn.ApplicatonProcess.December2020.Data.Repositories
         public void Delete(T entity)
         {
             _repositoryContext.Set<T>().Remove(entity);
+        }
+
+        public IQueryable<T> Where(Expression<Func<T, bool>> predicate, bool readOnly = false)
+        {
+            var set = _repositoryContext.Set<T>();
+            if (readOnly)
+                set.AsNoTracking();
+
+            return set.Where(predicate);
         }
 
     }

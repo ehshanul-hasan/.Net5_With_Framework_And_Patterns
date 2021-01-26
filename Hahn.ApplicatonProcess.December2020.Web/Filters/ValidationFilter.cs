@@ -33,7 +33,7 @@ namespace Hahn.ApplicatonProcess.December2020.Web.Filters
                 var data = from kvp in context.ModelState
                            from err in kvp.Value.Errors
                            let k = kvp.Key
-                           select new ValidationError(k, string.IsNullOrEmpty(err.ErrorMessage) ? _localizer["Invalid Input"] : _localizer[err.ErrorMessage]);
+                           select new ValidationError(k, string.IsNullOrEmpty(err.ErrorMessage) ? _localizer["Invalid Input"] : err.ErrorMessage);
 
                 var response = new BadRequestObjectResult(new Result(data, (int)HttpStatusCode.BadRequest, _localizer["Entity is not valid"]));
                 _logger.LogError(context.ActionDescriptor.DisplayName +  " - " + string.Join(',',data.Select(s=>s.Message).ToList()));
