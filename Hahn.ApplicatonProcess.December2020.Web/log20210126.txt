@@ -299,3 +299,14 @@
 2021-01-26 23:39:04.195 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' weist ein ungültiges Format auf.
 2021-01-26 23:39:22.310 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' weist ein ungültiges Format auf.
 2021-01-26 23:39:25.655 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:42:06.597 +06:00 [INF] Execution started of applicant post action
+2021-01-26 23:42:07.145 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 23:42:18.118 +06:00 [INF] Execution started of applicant post action
+2021-01-26 23:42:18.121 +06:00 [INF] Execution ended of applicant post action
+2021-01-26 23:42:28.142 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:42:43.827 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:42:51.712 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' ist keine gültige E-Mail-Adresse.,'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:43:00.299 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' ist keine gültige E-Mail-Adresse.,'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:43:12.031 +06:00 [ERR] Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantController.Post (Hahn.ApplicatonProcess.December2020.Web) - 'Email Address' weist ein ungültiges Format auf.
+2021-01-26 23:43:18.463 +06:00 [INF] Execution started of applicant post action
+2021-01-26 23:43:18.466 +06:00 [INF] Execution ended of applicant post action
