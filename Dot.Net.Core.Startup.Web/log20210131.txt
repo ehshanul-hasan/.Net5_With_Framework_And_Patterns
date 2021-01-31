@@ -1,0 +1,6 @@
+2021-01-31 22:11:59.348 +06:00 [INF] Execution started of applicant post action
+2021-01-31 22:12:00.073 +06:00 [INF] Execution ended of applicant post action
+2021-01-31 22:13:03.729 +06:00 [INF] Execution started of applicant get action
+2021-01-31 22:13:04.423 +06:00 [INF] Execution ended of applicant get action
+2021-01-31 22:13:17.728 +06:00 [INF] Execution started of applicant delete action
+2021-01-31 22:13:17.779 +06:00 [INF] Execution ended of applicant delete action
