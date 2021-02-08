@@ -108,9 +108,9 @@ namespace Dot.Net.Core.Startup.Web.Controllers
             return result.ToOkResult(_localizer["Applicant updated successfully"]);
         }
 
-
+        // Pagination support is not added. just pagin keys are defined here. No functionality developed.
         [HttpGet]
-        public async Task<ActionResult> List()
+        public async Task<ActionResult> List(int PageIndex = 0, int PageSize = 0, string searchKey = "")
         {
             var result = await _applicantService.ListAsync();
             return result.ToOkResult();
