@@ -23,3 +23,7 @@ Technology covered here:
 #Filters
 #Result Extenders.
 #web api etc
+
+This application serves 2 client app.
+  1. Angular -> https://github.com/ehshanul-hasan/angular.basic
+  2. Aurelia -> https://github.com/ehshanul-hasan/aurelia.basic
