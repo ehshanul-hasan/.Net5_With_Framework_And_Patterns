@@ -18,10 +18,10 @@ namespace Dot.Net.Core.Startup.Data.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseInMemoryDatabase("Hahn_Applicant").ConfigureWarnings(x => x.Ignore(InMemoryEventId.TransactionIgnoredWarning));
-            optionsBuilder.LogTo(Console.WriteLine);
-
+            
         }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //Add Dummy Data Here If Needed
             //base.OnModelCreating(modelBuilder);
