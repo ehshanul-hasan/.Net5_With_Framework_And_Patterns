@@ -75,5 +75,11 @@ namespace Dot.Net.Core.Startup.Domain.Services
             return result;
         }
 
+        public Task<IQueryable<Applicant>> ListQueryableAsync(CancellationToken cancellationToken = default)
+        {
+            var result =  _applicantRepository.Where(s => s.ID > 0);
+            return Task.FromResult(result);
+        }
+
     }
 }

@@ -16,6 +16,13 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Reflection;
+using Microsoft.AspNet.OData.Extensions;
+using Microsoft.AspNet.OData.Formatter;
+using Microsoft.Net.Http.Headers;
+using System.Linq;
+using Dot.Net.Core.Startup.Data.Entities;
+using Microsoft.OData.Edm;
+using Microsoft.AspNet.OData.Builder;
 
 namespace Dot.Net.Core.Startup.Web
 {
@@ -64,6 +71,7 @@ namespace Dot.Net.Core.Startup.Web
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
+            
 
             services.AddControllers(options =>
                 {
@@ -71,11 +79,16 @@ namespace Dot.Net.Core.Startup.Web
                     options.Filters.Add(typeof(ExceptionFilter));
                     options.Filters.Add(typeof(UnitOfWorkCommitFilter));
                     options.Filters.Add(typeof(ValidationFilter));
-                }).ConfigureApiBehaviorOptions(opt =>
+                })
+                .AddNewtonsoftJson()
+                .ConfigureApiBehaviorOptions(opt =>
                 {
                     opt.SuppressModelStateInvalidFilter = true;
                 })
             .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ApplicantValidator>());
+
+            services.AddOData();
+            AddFormatter(services);
 
             services.Configure<AppConfigurationData>(Configuration.GetSection("Settings"));
 
@@ -102,10 +115,39 @@ namespace Dot.Net.Core.Startup.Web
 
             app.UseAuthorization();
 
+
             app.UseEndpoints(endpoints =>
             {
+                endpoints.EnableDependencyInjection();
+                endpoints.Expand().Select().Filter().OrderBy().Count().MaxTop(10);
                 endpoints.MapControllers();
+                endpoints.MapODataRoute("api", "api", GetEdmModel());
+            });
+
+        }
+
+        private IEdmModel GetEdmModel()
+        {
+            var builder = new ODataConventionModelBuilder();
+            builder.EntitySet<Applicant>("Applicants");
+            return builder.GetEdmModel();
+        }
+
+        private void AddFormatter(IServiceCollection services)
+        {
+            services.AddMvcCore(options =>
+            {
+                foreach (var outputFormatter in options.OutputFormatters.OfType<ODataOutputFormatter>().Where(_ => _.SupportedMediaTypes.Count == 0))
+                {
+                    outputFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
+                }
+                foreach (var inputFormatter in options.InputFormatters.OfType<ODataInputFormatter>().Where(_ => _.SupportedMediaTypes.Count == 0))
+                {
+                    inputFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
+                }
             });
         }
+
+
     }
 }

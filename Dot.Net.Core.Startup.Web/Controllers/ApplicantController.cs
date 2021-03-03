@@ -2,13 +2,11 @@
 using Dot.Net.Core.Startup.Domain.Services;
 using Dot.Net.Core.Startup.Web.Extensions;
 using Dot.Net.Core.Startup.Web.Localize;
+using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
 
 namespace Dot.Net.Core.Startup.Web.Controllers
@@ -66,7 +64,7 @@ namespace Dot.Net.Core.Startup.Web.Controllers
             _logger.LogInformation("Execution started of applicant get action");
             var result = await _applicantService.GetByIdAsync(id);
             _logger.LogInformation("Execution ended of applicant get action");
-            return result.ToOkResult();
+            return Ok(result);
         }
 
         [HttpDelete("{id}")]
@@ -110,10 +108,11 @@ namespace Dot.Net.Core.Startup.Web.Controllers
 
         // Pagination support is not added. just pagin keys are defined here. No functionality developed.
         [HttpGet]
-        public async Task<ActionResult> List(int PageIndex = 0, int PageSize = 0, string searchKey = "")
+        [EnableQuery]
+        public async Task<IQueryable<Applicant>> List(int PageIndex = 0, int PageSize = 0, string searchKey = "")
         {
-            var result = await _applicantService.ListAsync();
-            return result.ToOkResult();
+            var result = await _applicantService.ListQueryableAsync();
+            return result;
         }
 
     }
